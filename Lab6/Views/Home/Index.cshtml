@@ -1,0 +1,11 @@
+﻿@model Lab6.Models.Entities
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    @foreach (var item in Model.Stations)
+    { 
+        <p>@item.Name - @item.UndergroundLines.Name;</p>
+    }
+</div>
